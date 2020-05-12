@@ -1,0 +1,354 @@
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	width: 90%;
+	margin: 0 5%;
+	font-family: 'Dancing Script', cursive;
+	background-color: #333;
+	scroll-behavior: smooth;
+}
+
+h1 {
+	font-size: 5vw;
+}
+
+h3 {
+	font-size: 1.75em;
+	font-weight: bold;
+	color: black;
+}
+
+p {
+	color: black;
+}
+
+/* MAIN STYLES */
+
+.allcontent {
+/* 	height: 100%; */
+	border: 1px solid black;
+	background-color: white;
+/* 	overflow: hidden; */
+}
+
+.bg {
+	background-image: url(../img/sunflower-bg.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#topNav {
+	z-index: 100;
+	list-style-type: none;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	background-color: rgba(51, 51, 51, 0.27);
+}
+
+#topNav a {
+	text-decoration: none;
+	color: black;
+	height: 6.2vh;
+	display: block;
+	text-align: center;
+	font-size: 3.4vh;
+	padding: 11px 10px;
+	text-shadow:
+	-1px -1px 0 #fff,
+	1px -1px 0 #fff,
+	-1px 1px 0 #fff,
+	1px 1px 0 #fff;
+}
+
+#topNav a:hover {
+	border-bottom: 1.5px solid white;
+}
+
+#topNav li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.mobileMenu {
+	display: none;
+}
+
+.selected {
+	border-bottom: 3px solid black;
+}
+
+.metPics {
+	max-width: 100%;
+	border: 1px solid black;
+}
+
+.mainFont {
+	width: 49%;
+	margin: 0 auto;
+	padding: 50px 0;
+	font-size: 10vw;
+	text-align: center;
+	color: white;
+/* 	text-shadow: 2px 0px 3px black; */
+}
+
+.subFont {
+	margin: 0 auto;
+	padding: 10px 0;
+	font-size: 6vw;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 0px 3px black;
+
+}
+
+.mainText {
+	max-width: 90%;
+	margin: 0px auto;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+}
+
+.mainText p {
+	line-height: 1.6;
+}
+
+#directionList {
+	color: black;
+	text-align: center;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.scrollDown {
+	display: block;
+	text-align: center;
+	font-size: xx-large;
+	color: white;
+	padding: 10px;
+}
+
+.section-break {
+	width: 80%;
+}
+
+.section-block {
+	height: 90px;
+	width: 100%;
+	background-color: #673037;
+}
+
+.banner {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-size: clamp(3.5rem, 2.5vw, 4rem);
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	border-top: solid black 1px;
+	background-color: rgba(241, 196, 15, 0.5);
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	padding: 10px 5px;
+	font-size: 2.5vh;
+	color: black;
+}
+
+footer a:hover {
+	color: #ecf0f1;
+	transition: 0.5s;
+}
+
+.footText a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Our Story */
+
+#content {
+	margin-bottom: 10px;
+}
+
+.howWeMet {
+	color: white;
+}
+
+#sunflower-banner img {
+	position: static;
+	width: 100%;
+	border-top: 3px solid;
+}
+
+#savnick {
+	position: relative;
+	top: -25px;
+	border: 2px solid black;
+	width: 45vw;
+	height: 100%;
+}
+
+
+/* Info */
+#gmap {
+	margin: 0 auto;
+}
+
+.links {
+	color: #2d17af;
+	text-decoration: none;
+}
+
+.links:hover {
+	color: #5b80ee;
+	text-decoration: underline;
+}
+
+/* CONTACT PAGE FORM */
+#form-row form {
+	padding: 10px;
+	text-align: center;
+	color: black;
+}
+
+#form-row form input {
+	border: 1px solid black;
+	display: block;
+	padding: 5px;
+	margin: 10px auto;
+}
+
+#form-row form textarea {
+	border: 1px solid black;
+	resize: none;
+	height: 70px;
+	padding: 5px;
+	display: block;
+	margin: 10px auto;
+}
+
+#contact-info {
+	height: 100px;
+	color: white;
+	text-align: center;
+	padding: 3px;
+}
+
+#contact-info p {
+	display: block;
+}
+
+/* BUTTON SCROLL-TO-TOP */
+#myBtn {
+    background-color: #5d5d5d;
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 15px;
+    z-index: 100;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+}
+
+/* FOR Phones */
+
+/*iPhone X landscape*/
+@media screen and (min-width: 812px) {
+	#topNav a {
+		font-size: clamp(2.5rem, 1.5vw, 3rem);
+	}
+}
+
+@media screen and (max-height: 415px) {
+    #topNav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 766px) {
+	#topNav{
+		height: auto;
+
+	}
+
+	#topNav li {
+		display: none;
+	}
+
+	#topNav a:hover {
+		border-bottom: 0;
+		text-decoration: line-through;
+	}
+
+	body, html {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.allcontent {
+		width: 100%;
+	}
+
+	.fa-arrow-down {
+		display: none;
+	}
+
+
+ 	.mobileMenu {
+ 		color: white;
+		display: list-item;
+		font-size: 2.5vh;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	#myBtn {
+	    background-color: none;
+		display: block;
+		right: 10%;
+	}
+
+}
+
+.footText p {
+    color: white;
+}
+
+/* FOR Tablets & Computers */
+@media screen and (min-width: 400px) {
+.bg {
+	height: 100%;
+}
+
+.fa-arrow-down {
+	display: inline-block;
+}
+}
