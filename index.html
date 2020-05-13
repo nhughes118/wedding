@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="js/main.js" charset="utf-8"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,6 +32,37 @@
 			<div class="mainFont">Savannah & Nicholas</div>
 			<div class="subFont">October 23rd, 2020</div>
 		</div>
+    <div class="section-block">
+      <h1 class="howWeMet banner">Days Until:</h1>
+    </div>
+    <!-- 2018-03-02 23:59:00 -->
+    <!-- "Y-m-d H:i:s" -->
+    <div id="daysUntil">
+      <div id="app">
+        <countdown date="2020-10-23 17:00:00"></countdown>
+      </div>
+
+      <template id="countdown-template">
+        <div class="countdown">
+          <div class="block">
+            <p class="digit">{{ days | two_digits }}</p>
+            <p class="text">Days</p>
+          </div>
+          <div class="block">
+            <p class="digit">{{ hours | two_digits }}</p>
+            <p class="text">Hours</p>
+          </div>
+          <div class="block">
+            <p class="digit">{{ minutes | two_digits }}</p>
+            <p class="text">Minutes</p>
+          </div>
+          <div class="block">
+            <p class="digit">{{ seconds | two_digits }}</p>
+            <p class="text">Seconds</p>
+          </div>
+        </div>
+      </template>
+    </div>
 		<div class="section-block">
     		<div id="story">
     		    <h1 class="howWeMet banner">Our Story</h1>

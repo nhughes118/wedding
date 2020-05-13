@@ -277,6 +277,49 @@ footer a:hover {
     -webkit-border-radius: 200px 200px 200px 200px;
 }
 
+/* Countdown */
+
+#daysUntil {
+  width: 100%;
+}
+
+#app {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.countdown {
+  display: flex;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.text {
+    color: #673037;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', serif;
+    font-weight: 40;
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.digit {
+    color: black;
+		font-size: clamp(3.5rem, 2.5vw, 4rem);
+    font-weight: 100;
+    font-family: 'Roboto', serif;
+    margin: 10px;
+    text-align: center;
+}
+
+
 /* FOR Phones */
 
 /*iPhone X landscape*/
@@ -344,11 +387,19 @@ footer a:hover {
 
 /* FOR Tablets & Computers */
 @media screen and (min-width: 400px) {
-.bg {
-	height: 100%;
+	.bg {
+		height: 100%;
+	}
+
 }
 
-.fa-arrow-down {
-	display: inline-block;
-}
+	.fa-arrow-down {
+		display: inline-block;
+	}
+
+	@media screen and (max-width: 500px) {
+		.countdown {
+			display: inline-block;
+		}
+	}
 }
