@@ -27,7 +27,7 @@ $(document).ready(function(){
 	//countdown timer
 window.onload = function() {
 	  // Month Day, Year Hour:Minute:Second, id-of-element-container
-	  countDownToTime("Oct 23, 2020 17:00:00", 'countdown1'); // ****** Change this line!
+	  countDownToTime("Oct 23, 2020 17:30:00", 'countdown1'); // ****** LINE TO CHANGE WEDDING DATE & TIME!
 	}
 	function countDownToTime(countTo, id) {
 	  countTo = new Date(countTo).getTime();
